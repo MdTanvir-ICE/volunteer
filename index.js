@@ -74,4 +74,4 @@ client.connect(err => {
     })
 });
 
-app.listen(port, () => console.log(`Server started on port ${port}`));
+app.listen(process.env.PORT || port)
